@@ -1,0 +1,21 @@
+{
+  "name": "SkyCollection",
+  "description": "Personalize the save-specific item catalog and reset its discovered records.",
+  "icon": "✧",
+  "accent": "#73dce3",
+  "requiredCore": "SkyOS.dll",
+  "appPlugin": "SkyCollection.dll",
+  "showInSkyApps": false,
+  "settings": [
+    { "id": "openHotkey", "group": "Keyboard shortcuts", "label": "Open SkyCollection", "type": "hotkey", "default": "", "description": "Open the item collection page." },
+    { "id": "showPluginName", "group": "Catalog cards", "label": "Show plugin names", "type": "boolean", "default": true, "description": "Show the plugin that owns each item record." },
+    { "id": "showItemCount", "group": "Catalog cards", "label": "Show collected item counts", "type": "boolean", "default": true, "description": "Show how many copies you have collected." },
+    { "id": "showFormID", "group": "Catalog cards", "label": "Show FormIDs", "type": "boolean", "default": true },
+    { "id": "showCategory", "group": "Catalog cards", "label": "Show item categories", "type": "boolean", "default": true },
+    { "id": "showSubcategory", "group": "Catalog cards", "label": "Show item subcategory names", "type": "boolean", "default": true, "description": "Show the specific category, such as Food, Rings, or Swords, on each card." },
+    { "id": "showRarityBadge", "group": "Catalog cards", "label": "Show rarity labels and card colors", "type": "boolean", "default": true, "description": "Rarity follows the collection rules for quest flags, unique items, and source plugins." },
+    { "id": "showPluginFilter", "group": "Catalog filters", "label": "Show the plugin filter", "type": "boolean", "default": true },
+    { "id": "sortOrder", "group": "Catalog filters", "label": "Default item order", "type": "select", "default": "name", "options": [{ "value": "name", "label": "Name A–Z" }, { "value": "most-found", "label": "Most collected" }, { "value": "rarity", "label": "Rarity" }] },
+    { "id": "resetCollection", "group": "Collection data", "label": "Reset this save's collection", "type": "action", "action": "resetCollection", "buttonLabel": "Reset Collection", "description": "Clears discovered items from the active save's in-game collection. Cached icon files are kept. Save the game afterward to retain the reset in that save." }
+  ]
+}

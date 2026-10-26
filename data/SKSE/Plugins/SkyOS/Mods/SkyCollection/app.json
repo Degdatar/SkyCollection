@@ -1,0 +1,10 @@
+{
+  "name": "SkyCollection",
+  "plugin": "SkyCollection.dll",
+  "requiredCore": "SkyOS.dll",
+  "requiredApps": ["SkyCounterUI.dll"],
+  "viewerModule": "Data/SKSE/Plugins/SkyOS/Mods/SkyViewer/SkyCollection/module.json",
+  "documents": "Data/SKSE/Plugins/SkyOS/Mods/SkyCollection/SkyDocuments",
+  "settingsStorage": "%LOCALAPPDATA%/SkyOS/SkyViewer/SkyCollection/settings.json",
+  "dataStorage": "Collection discoveries are saved with the active Skyrim save. SkyCounter UI owns item rendering and caches icons under Data/SKSE/Plugins/SkyOS/Mods/SkyCounterUI/Icons/ and location screenshots under Data/SKSE/Plugins/SkyOS/Mods/SkyCounterUI/Locations/. SkyCollection reads and displays those shared caches."
+}

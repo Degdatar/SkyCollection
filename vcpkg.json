@@ -1,0 +1,9 @@
+{
+  "name": "skycollection",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "directxtk",
+    "rapidcsv",
+    "spdlog"
+  ]
+}
